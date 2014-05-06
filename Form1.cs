@@ -44,7 +44,7 @@ namespace MenuStripApp
             Graphics g = e.Graphics;
             g.DrawString("Right click on me....",
                 new Font("Times New Roman", (float)currentFontSize),
-                new SolidBrush(Color.Black,50,50);
+                new SolidBrush(Color.Black),50,50);
         }
 
         private void hugeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -58,9 +58,7 @@ namespace MenuStripApp
                 case "huToolStripMenuItem":
                     currentFontSize = TextFontSize.FontSizeHuge;
                     break;
-                case "hugeToolStripMenuItem":
-                    currentFontSize = TextFontSize.FontSizeHuge;
-                    break;
+                
             }
         }
     }
